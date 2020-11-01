@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name='viewport' content='width=divice-wisth, initial-scale=1.0'/>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        <title>Pelis App</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>Pelis App</h1>
+                <ul>
+                    <li><a href='#agregar'>Agregar Pelicula</a></li>
+                    <li><a href='#peliculas'>Peliculas</a></li>
+                    <li><a href='#favoritas'>Favoritas</a></li>
+                    <li><a href='#home'>Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id='home'>
+                <div class="main-conteiner">
+                    <h2>Destacada</h2>
+                    <div id="izquierda">
+                        <h3>Titulo</h3>
+                        <p>Alicia a traves del espejo</p>
+                        <h4>Género</h4>
+                        <p>Fantasia</p>
+                        <div id="descripcion-destacada">
+                            <h4>Descripción</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nostrum consequuntur vero magnam voluptates tenetur alias iure saepe nulla porro hic facere rem, officia debitis nesciunt possimus minus consequatur ab?</p>
+                        </div>
+                        <h4>Calificación</h4>
+                        <p>&#9734;&#9734;&#9734;&#9734;</p>
+                    </div>
+                    <div>
+                        <img class="poster" src='https://expreso.co.cr/alicia/wp-content/uploads/2016/02/peli03.jpg' alt='Poster Alicia a traves del espejo'/>
+                    </div>
+                </div>
+            </section>
+            <section id='favoritas'>
+                <h2>Favoritas</h2>
+                <div class="favoritas-conteiner">
+                <div class="favorita">
+                    <div>
+                        <img class="poster" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_r39Bu9Uc-uvvA-UKpKcn_vIUcAXV-OI1IgJYF2krW_GTdJrT' alt='Poster Alicia en el Pais de las Maravillas'/>
+                    </div>
+                    <h3>Título</h3>
+                    <p>Alice in Wonderland</p>
+                    <h4>Género</h4>
+                    <p>Fantasia</p>
+                </div>
+                <div class="favorita">
+                    <div>
+                        <img class="poster" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_r39Bu9Uc-uvvA-UKpKcn_vIUcAXV-OI1IgJYF2krW_GTdJrT' alt='Poster Alicia en el Pais de las Maravillas'/>
+                    </div>
+                    <h3>Título</h3>
+                    <p>Alice in Wonderland</p>
+                    <h4>Género</h4>
+                    <p>Fantasía</p>
+                </div>
+                <div class="favorita">
+                    <div>
+                        <img class="poster" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_r39Bu9Uc-uvvA-UKpKcn_vIUcAXV-OI1IgJYF2krW_GTdJrT' alt='Poster Alicia en el Pais de las Maravillas'/>
+                    </div>
+                    <h3>Título</h3>
+                    <p>Alice in Wonderland</p>
+                    <h4>Género</h4>
+                    <p>Fantasía</p>
+                </div>
+                </div>
+            </section>
+            <section id='peliculas'>
+                <h2>Películas</h2>
+                <h3>Lista de Peliculas</h3>
+                <button id='boton_recomendada' onclick='Recomendada()'>¿Cuál es la más recomendada?</button>
+                <article class="peliculas">
+                    <div class="peliculas_conteiner">
+                        <div>
+                            <img class="poster" src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEfQ9DmulHz49AuOfGdvjbKW9t76Q3FbEHrAYyK4p-KBNPw-0J' alt='Poster de El Cadaver de la Novia'/>
+                        </div>
+                        <div class="derecha">
+                            <h3>Título</h3>
+                            <p>El Cadaver de la Novia</p>
+                            <h4>Género</h4>
+                            <p>Fantasía</p>
+                            <h4>Descripción</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quam. Voluptatibus dolor aperiam excepturi doloribus magnam. Dolore delectus, quasi, cum sed vitae neque, necessitatibus cupiditate quidem dignissimos facere laudantium est.</p>
+                        </div>
+                    </div>
+                    <div class="peliculas_conteiner">
+                        <div>
+                            <h4>Calificación</h4>
+                            <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                        </div>
+                        <div class="peliculas_botones">
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="peliculas" id="recomendadaP">
+                    <div class="peliculas_conteiner">
+                        <div>
+                            <img class="poster" src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEfQ9DmulHz49AuOfGdvjbKW9t76Q3FbEHrAYyK4p-KBNPw-0J' alt='Poster de El Cadaver de la Novia'/>
+                        </div>
+                        <div class="derecha">
+                            <h3>Título</h3>
+                            <p>El Cadaver de la Novia</p>
+                            <h4>Género</h4>
+                            <p>Fantasía</p>
+                            <h4>Descripción</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quam. Voluptatibus dolor aperiam excepturi doloribus magnam. Dolore delectus, quasi, cum sed vitae neque, necessitatibus cupiditate quidem dignissimos facere laudantium est.</p>
+                        </div>
+                    </div>    
+                    <div class="peliculas_conteiner">
+                        <div>
+                            <h4>Calificación</h4>
+                            <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                        </div>
+                        <div class="peliculas_botones">
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="peliculas">
+                    <div class="peliculas_conteiner">
+                        <div>
+                            <img class="poster" src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEfQ9DmulHz49AuOfGdvjbKW9t76Q3FbEHrAYyK4p-KBNPw-0J' alt='Poster de El Cadaver de la Novia'/>
+                        </div>
+                        <div class="derecha">
+                            <h3>Título</h3>
+                            <p>El Cadaver de la Novia</p>
+                            <h4>Género</h4>
+                            <p>Fantasía</p>
+                            <h4>Descripción</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quam. Voluptatibus dolor aperiam excepturi doloribus magnam. Dolore delectus, quasi, cum sed vitae neque, necessitatibus cupiditate quidem dignissimos facere laudantium est.</p>
+                        </div>
+                    </div>
+                    <div class="peliculas_conteiner">
+                        <div>
+                            <h4>Calificación</h4>
+                            <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                        </div>
+                        <div class="peliculas_botones">
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+                <section id='agregar'>
+                    <form id="formulario">
+                        <label for='titulo'>Titulo</label>
+                        <input class="info" type='text' name='titulo'/>
+                        <label for='genero'>Género</label>
+                        <input class="info" type='text' name='genero'/>
+                        <label for='descripcion'>Descripción</label>
+                        <textarea name='descripcion'></textarea>
+                        <label for='calificacion'>Calificación</label>
+                        <input class="info" type='text' name='calificacion'/>
+                        <button id="enviar" type="submit" onclick='agregarPeli()'>Enviar</button>
+                    </form>
+                </section>
+            </section>
+        </main>
+        <footer>Pelis App 2020</footer>
+    </body>
+    <script src='script.js'></script>
+</html>
